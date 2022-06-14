@@ -1,0 +1,55 @@
+bool() function for type casting / coersion
+bool(arg) converts other data types in to bool datatype. here, arg are of int, float, complex, str.
+-------------------------------------------------------------------------------------------------
+
+1. bool(int argument)
+returns False for zero
+returns True for any non-zero argument
+ex 1 
+bool(0)  ===> False 
+bool(10) ---> non -zero argument ---> True
+bool(-10) ...> non zero argument ---> True
+---------------------------------------------------------------
+
+2. bool(float argument)
+returns False for 0 
+returns True for any non-zero argument
+
+ex
+bool(0.0) ----> 0 .-----> False
+bool(0.1) -----> 0.1  ----> True
+bool(-10.1) ---> -10.1 --> non zero argumnet ---> True
+
+-------------------------------------------------------------------------------------------------
+
+3. bool(complex argument)
+if both real and imaginary parts are 0 then returns False
+else 
+returns True (for non zero argument)
+There is no Value Error in this case
+
+bool(0+0j)   ----> both real and imagianary parts are 0 ---> False
+bool(0+1j)  -----> since imaginary part is non -zero, it returns -----> True
+
+bool(10_20J)  ----> real and imaginary partsare non-zero  ---> True
+
+-------------------------------------------------------------------------------------------------
+
+4. Bool(string argument)
+Rule: If the string argumnet is an empty string( '' or "" or """""" ) then returns -- False
+in all other cases, bool(str) returns True
+
+ex:
+bool('')  ---> an emplty string ----> False
+bool("") ----> empty string .....> False
+bool('Sasi') -----? Nonempty String ----> True
+bool(' ' ) ---> Non empty string --- True
+
+---------------------------------------------------------------------------
+
+Note: 
+bool() never returns any error. But it always returns wither True or False
+bool to any other data type conversion is possible.
+-------------------------------------------------------------------
+
+
