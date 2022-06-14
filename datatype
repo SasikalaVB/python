@@ -1,0 +1,19 @@
+Features
+-------
+Implemented in C / C++
+Interpreter
+cross platform language  - Python  Virtual Machine (PVM)
+Free and Open source
+Object Oriented Design approach - class & Object
+Huge Standard library 
+Dynamic typing ( no datatype rules)
+>>> i=10
+print(i)
+10
+>>> 10
+----------------------------------------------------------------
+
+Python package managemet
+In Linux, python 2.7 is written by default.
+ But, Windows doesn't have Python by default
+-------------------------------------------------
