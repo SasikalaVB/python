@@ -1,0 +1,81 @@
+There are 5 fundamental data types in Python.
+They are int, float, complex, bool and string.
+All these 5 fundamental data types are immutable data types, means, once object is created, we cant change it.
+--------------------------------------------------------------------------------------------------------------
+
+All 5 data types are immutable in Python. What is the advantage of immutable nature of fundamental data types?
+Consider,
+ x=10
+ id(x)   --> address of object x
+ y=10
+ id ( y)   ... > address of object y.
+ 
+ x=10      -- For all these, Python creates an object with value 10 and creates references as x, y, z and l,
+ y=10          By doing this, Python achieves higher performance and more memeory. This is the advantage of immutable nature of all 5 fundamental data types.
+               Here, it is not required to create 4 objects instead, we create only one object. This is also object reuasbility,
+ z=10
+ l = 10
+ 
+id(x) = id(y) = id(z) = id(l) refers to the same location... so no need to create 4 separate objects, instead , we create an object and referenced by 4.
+This definitely improves performances and memory.
+------------------------------------------------------------------------------------
+
+Everything in Python is an object.
+All fundamental data types ( int, float, complex, bool, string) are immutable objects.
+---------------------------------------------------------------------------
+
+
+is operator
+----------
+
+In Pyhton, We have is operator, used to check if object referred by references is same or not?
+ex:
+   x=10
+   y=10
+   x is y ---> returns True
+   y is x ---> returns True
+   
+   for bool objects
+   x=True
+   y=True
+   z=True
+   x is y  ---? True
+   y is x ---> True
+   x is z  ...> True
+   z is x ---> True
+   --------------------------------------------------------------------
+   
+   Rules in  reusing of Objects
+   ---------------------------
+   1. For int objects, reusing is allowed on from 0 to 256 objects. This can be verified as ,
+   x=256
+   y=256
+   
+   x is y  ---> returns True
+   y is x ====> returns True
+   
+   again
+   x=257
+   y=257
+   
+   x is y ----> retrns False
+   y is x -----> returns False
+   
+   2. For float objects, reusing of objects is not allowed.
+   ex,
+   x=10.0
+   y=20.0
+   x is y ......> returns False
+   y is x -------> returns False
+   
+   3. For complex objects also, reusing of objects are not allowed.
+   ex,
+   x=10+20j
+   y=20+30j
+   
+   x is y ----> returns False
+   y is x ----> returns False
+   
+   
+   
+   
