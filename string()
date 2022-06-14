@@ -1,0 +1,18 @@
+string() function is used to convert anyothr datatype (int,float,complex,bool) into string data type.
+Rule : There is no restriction for aby dat type to be converted into string data type
+
+-------------------------------------------------------------------------------------------
+
+str(int)
+ex : str(10)  --- returns '10'
+str(float)
+str(10.5)  ----> returns '10.5'
+
+str(bool)
+str(True)   ----> returns 'True'
+str(False)  ---> returns 'False'
+
+str(complex)
+str(10+20j)  ----> returns '(10+20j)' --- > here ( ,,,) is to denote the string in ' ' --- internal implementation
+
+----------------------------------------------------------------------------------------
