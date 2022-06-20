@@ -1,0 +1,14 @@
+bytes:
+------
+
+for x in bytes:
+    print(x)
+    
+  ---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+Input In [2], in <cell line: 1>()
+----> 1 for x in bytes:
+      2     print(x)
+
+TypeError: 'type' object is not iterable
+------------------------------------------------------------------------------------------------
