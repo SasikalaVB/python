@@ -1,0 +1,50 @@
+bytearray is mutable and in the range of 0 to 256 objects.
+
+x = [10, 20, 30, 40]
+b = bytes(x)
+c = bytearray(x)
+
+for i in b:
+    print(i)
+    print("\n")
+for i in c:
+    print(i)
+    
+#b[0] = 20
+print(b[0])
+
+c[0] = 120
+print(c[0])
+
+c[0] = 259
+print(c[0])
+
+10
+
+
+20
+
+
+30
+
+
+40
+
+
+10
+20
+30
+40
+10
+120
+---------------------------------------------------------------------------
+ValueError                                Traceback (most recent call last)
+Input In [20], in <cell line: 17>()
+     14 c[0] = 120
+     15 print(c[0])
+---> 17 c[0] = 259
+     18 print(c[0])
+
+ValueError: byte must be in range(0, 256)
+
+-------------------------------------------------------------------------
