@@ -1,0 +1,13 @@
+list
+----
+1. insertion order is preserved.
+2. duplcates are allowed.
+3. heterogenous objects are allowed
+4. None is allowed
+5. list is growable.
+6. index and slicing operator are used
+7. values sould be enclosed with []
+
+
+l = []
+
