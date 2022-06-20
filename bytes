@@ -2,6 +2,19 @@ bytes datatype
 --------------
 used to represent a group of byte numbers.
 
+Rule1
+-----
+1. bytes value should be in the range of 0 to 256.
+
+Rule 2
+------
+bytes data type is immutable.
+
+Usgae:
+------
+If we want to use a dat type for 0 to 256 range and immutable then we can go for bytes data type.
+
+
 How to create bytes data types?
 x = [10.20.30.40]
 b = bytes(x)
@@ -33,3 +46,21 @@ for x in b:
 20
 30
 40
+
+------------------------------------------------------------------------------
+
+x = [10,30,40,50]
+b = bytes(x)
+for x in b:
+    print(x)
+b[0]
+
+b[0] = 100
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+Input In [6], in <cell line: 7>()
+      4     print(x)
+      5 b[0]
+----> 7 b[0] = 100
+
+TypeError: 'bytes' object does not support item assignment
