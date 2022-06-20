@@ -64,3 +64,19 @@ Input In [6], in <cell line: 7>()
 ----> 7 b[0] = 100
 
 TypeError: 'bytes' object does not support item assignment
+
+-----------------------------------------------------------------------------
+
+x = [10, 20 , 'sasi']
+b = bytes(x)
+
+print(b[0])
+
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+Input In [22], in <cell line: 2>()
+      1 x = [10, 20 , 'sasi']
+----> 2 b = bytes(x)
+      4 print(b[0])
+
+TypeError: 'str' object cannot be interpreted as an integer
